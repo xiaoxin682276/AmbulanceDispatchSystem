@@ -1,0 +1,177 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #2f3640;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  color: #273c75;
+  margin-bottom: 20px;
+}
+
+.config-panel {
+  background: #dcdde1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.config-panel input {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.start-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  background-color: #44bd32;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:disabled {
+  background-color: #718093;
+  cursor: not-allowed;
+}
+
+/* 新增：停止按钮 */
+.stop-button {
+  padding: 10px 20px;
+  margin: 10px 5px 10px 0;
+  border: none;
+  background-color: #e84118;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stop-button:hover {
+  background-color: #c23616;
+}
+
+/* 新增：重启按钮 */
+.restart-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  background-color: #0097e6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background-color: #40739e;
+}
+
+.log {
+  font-style: italic;
+  color: #e84118;
+}
+
+.status-section {
+  margin-top: 30px;
+}
+
+.summary {
+  background-color: #f1f2f6;
+  padding: 10px;
+  border-left: 5px solid #00a8ff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.hospital-panel, .entity-panel {
+  margin-bottom: 30px;
+}
+
+.hospital {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dcdde1;
+}
+
+.ambulance-item, .patient-item {
+  padding: 5px 10px;
+  border-bottom: 1px solid #dcdde1;
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+h2, h3 {
+  color: #353b48;
+  margin-top: 20px;
+}
+
+.map-container {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-node {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #00a8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.map-edge {
+  height: 2px;
+  background-color: #718093;
+  flex-grow: 1;
+  margin: 0 5px;
+}
+
+.map-legend {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.legend-hospital { background-color: #44bd32; }
+.legend-patient { background-color: #e84118; }
+.legend-ambulance { background-color: #fbc531; }
